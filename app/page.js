@@ -77,14 +77,6 @@ export default function Home() {
             Week 10
           </Link>
           </ul>
-        <ul>
-          <Link
-            className="underline text-cyan-600 hover:text-cyan-300"
-            href="./week-8a/"
-          >
-            Week 8 ex
-          </Link>
-          </ul>
         </li>
     </main>
   );
