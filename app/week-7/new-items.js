@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function ProductForm({currentCount, incrementCountFunction, decrementCountFunction}) {
+export default function ProductForm({currentCount, incrementCountFunction, decrementCountFunction, onAddItem}) {
 
     let buttonStylesInc = "bg-blue-400 hover:bg-blue-700 active:bg-yellow-300 rounded text-white mt-5 px-4 py-2";
     let buttonStylesDec = "bg-blue-400 hover:bg-blue-700 active:bg-yellow-300 rounded text-white mt-5 px-4 py-2";
@@ -30,6 +30,8 @@ export default function ProductForm({currentCount, incrementCountFunction, decre
         Name: name,
         type: productType
         };
+
+        onAddItem(items);
 
         alert(`
             Count: ${items.Counter}
