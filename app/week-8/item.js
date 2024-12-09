@@ -2,10 +2,10 @@
 
 import React from "react";
 
-export default function Items({name, quantity, category}){
+export default function Items({name, quantity, category, onSelect}){
 
     return(
-        <li>
+        <li onClick={() => onSelect(name)} className="cursor-pointer">
             <ul>
                 <h1>Name: {name}</h1>
             </ul>
